@@ -3,19 +3,19 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Grandstander', cursive;
-    color: #354230;
+    color: gray;
 }
 #main{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
-    background-color: white;
     height: 100vh;
 }
 .column{
     flex:1;
     
+    background-color: #ffc87c;
     text-align: center;
 }
 .column_2{
@@ -27,11 +27,12 @@
 }
 .block{
     flex: 1;
-    background-color: white;
+    background-color: #ffc87c;
 }
 .block_2{
     flex: 1;
-    background-color: #D3D3D3;
+    background-color: lightgray;
+    border: 1px solid gray;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -45,18 +46,55 @@ flex: 1;
 margin-top: 2vh;
 font-size: 5vh;
 }
+#name input{
+    width: 50vh;
+    height: 5vh;
+}
+#surname input{
+    width: 50vh;
+    height: 5vh;
+}
+#e_mail input{
+    width: 50vh;
+    height: 5vh;
+}
+
 #name{
 flex: 1;
+margin-left: 1vh;
 }
 #surname{
 flex: 1;
+margin-right: 1vh;
 }
 #e_mail{
 flex: 1;
+margin-left: 1vh;
+}
+#buttons{
+flex: 1;
+
+}
+#buttons input{
+    border: 1px solid #696969;
 }
 #submit{
-flex: 1;
-}
-#submit button{
     font-size: 5vh;
+    padding: 2vh;
+    margin-bottom: 3vh;
+    margin-right: 4vh;
+    border: 1px solid #696969;
+    
+}
+#clear{
+    font-size: 5vh;
+    padding: 2vh;
+    margin-bottom: 3vh;
+    margin-left: 4vh;
+    
+}
+
+#buttons input:hover{
+    background-color: orangered;
+    color: white;
 }

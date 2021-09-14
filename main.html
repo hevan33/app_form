@@ -7,6 +7,7 @@
 <title>basic html form</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,100&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -37,13 +38,15 @@
                 <label for="name">e-mail:</label>
                 <input id="e_mail"type="text" placeholder="jan.kowalski@wp.pl">
             </div>
-            <div id="submit">
-                <button>Submit</button>
+            <div id="buttons">
+                <input type="button" value="Send" id="submit">
+                <input type="button" value="Send" id="clear">
+            
             </div>
 
             </div>
             <div class="block">
-              
+              <div id="text"></div>
             </div>
         </div>
         <div class="column">
