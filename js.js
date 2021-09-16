@@ -1,8 +1,9 @@
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#submit").click(function(){
         var emailValidationRegularExpression = /\S+@\S+\.\S+/;
 //Validate TextBox value against the Regex.
 var validation = emailValidationRegularExpression.test(document.getElementById("e_mail").value);
+document.write(e_mail);
 if (!validation) {
 alert("Not an email address");
 } else {
@@ -28,7 +29,7 @@ document.getElementById("text").innerHTML="Successful application!";
 })
 
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#clear").click(function(){
         
         document.getElementById("name").value=" ";
         document.getElementById("surname").value=" ";

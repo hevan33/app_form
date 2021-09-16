@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,100&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js.js"></script>
 </head>
 <body>
 
@@ -26,25 +27,27 @@
                     
                 </div>
                 
-                <div id="name">
-                    <label for="name">name:</label>
-                <input id="name"type="text" placeholder="Jan">
+                <div id="name_container" >
+                    <p class="form_text">name:</p>
+                    <input id="name"type="text" >
+                </div>
+                <div id="surname_container" >
+                    <p class="form_text">surname:</p>
+                    <input id="surname"type="text" >
+                </div>
+                <div id="e_mail_container" >
+                    <p class="form_text">e-mail:</p>
+                    <input id="e_mail"type="text" >
+                </div>
+                <div id="buttons">
+                    <input type="button" value="Send" id="submit" class="btn">
+                    <input type="button" value="Clear" id="clear" class="btn">
+                
+                </div>
             </div>
-            <div id="surname">
-                <label for="name">surname:</label>
-                <input id="surname"type="text" placeholder="Kowalski">
-            </div>
-            <div id="e_mail">
-                <label for="name">e-mail:</label>
-                <input id="e_mail"type="text" placeholder="jan.kowalski@wp.pl">
-            </div>
-            <div id="buttons">
-                <input type="button" value="Send" id="submit">
-                <input type="button" value="Send" id="clear">
-            
-            </div>
+     
 
-            </div>
+            
             <div class="block">
               <div id="text"></div>
             </div>
